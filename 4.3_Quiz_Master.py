@@ -30,7 +30,7 @@ else:
     print("No, go back to 8th grade")
 qs=input("4. What is Hermon's name? \n A. Marc\n B. Narc\n C. Mickey\n D. Nick")
 questions+=1
-if qs.lower()=="a" or pr.lower()=="marc":
+if qs.lower()=="a" or qs.lower()=="marc":
     print("Perfect!")
     total_correct+=1
 else:
@@ -54,10 +54,10 @@ else:
     print("How did you get in here?")
 qs=input("7. What is the name of this class?")
 questions+=1
-if qs.lower()=="csp":
+if qs.lower()=="csp" or qs.lower()=="computer science principals":
     print("NiCe OnE!")
     total_correct+=1
 else:
     print("DuMb DuMb Go BaCk To ClAsS")
 total=total_correct/questions
-print("That's the end! you got ", total_correct,"\n Out of ", questions, "Your total score is ", total//.01, "%")
+print("That's the end! you got", total_correct,"\n Out of", questions, "Your total score is", total//.01, "%")
